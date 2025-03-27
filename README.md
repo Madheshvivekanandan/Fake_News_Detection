@@ -23,4 +23,31 @@ The dataset used for this project was obtained from Kaggle:
    ```sh
    git clone https://github.com/yourusername/fake-news-detection.git
    cd fake-news-detection
-  ```
+   ```
+2. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit app:
+   ```sh
+   streamlit run app.py
+   ```
+### Model Training 
+1. Preprocessing
+   -  Removed special characters, punctuation, and stopwords.
+   -  Converted text to lowercase.
+   -  Applied TF-IDF vectorization.
+2. Training:
+   - Used Logistic Regression for binary classification.
+   - Evaluated using accuracy_score.
+3. Saving the Model:
+   - Trained model and vectorizer were saved using pickle.
+### Streamlit Web App
+   - Users can input a news article.
+   - The app processes the text, applies TF-IDF, and predicts if the news is real or fake.
+   - Displays the prediction result in real time.
+## Usage
+   - Run the app and enter a news article in the text area.
+   - Click Predict to see if the news is Real or Fake.
+## Author
+Madhesh Vivekanandan
