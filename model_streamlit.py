@@ -20,6 +20,8 @@ if st.button("Predict"):
         # Convert input into a DataFrame
         input_df = pd.DataFrame([news_text], columns=["news_text"])
         
+
+        
         # Transform using TF-IDF
         # transformed_text = vectorizer.transform(input_df["news_text"])
         
